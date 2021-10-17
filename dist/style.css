@@ -1,0 +1,389 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.918);
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  font-family: "Festive", cursive;
+}
+header h1:hover {
+  color: rgba(5, 16, 55, 0.1);
+  cursor: pointer;
+}
+header .input {
+  position: relative;
+  border: 1px solid #e5e5ea;
+  border-radius: 60px;
+}
+header .input input {
+  max-width: 471px;
+  height: 56px;
+  box-shadow: 0px 12px 24px rgba(5, 16, 55, 0.04);
+  border-radius: 60px;
+  padding: 15px 24px;
+  display: flex;
+  align-items: center;
+  border: none;
+  line-height: 18px;
+  font-size: 16px;
+  color: #8e8e93;
+}
+header .input .search-ico {
+  position: absolute;
+  bottom: 32px;
+  right: 20px;
+}
+header ul {
+  cursor: pointer;
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+  line-height: 18px;
+}
+header ul li {
+  list-style-type: none;
+  font-family: "IM Fell English SC", serif;
+}
+header ul li:hover {
+  color: #3e3eda;
+}
+header .cart {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border: 0.5px solid #e5e5ea;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px rgba(5, 16, 55, 0.1);
+  transition: all 1s;
+}
+header .cart:hover {
+  transform: rotate(180deg);
+}
+header .connect {
+  font-family: "IM Fell English SC", serif;
+  cursor: pointer;
+  width: 151px;
+  height: 47px;
+  padding: 16px;
+  background-color: rgba(0, 122, 255, 0.12);
+  color: #007aff;
+  border: 0.5px solid rgba(0, 122, 255, 0.12);
+  border-radius: 33px;
+}
+header .connect:hover {
+  background-color: rgba(0, 123, 255, 0.829);
+  color: #e5ebf1;
+}
+.card {
+  font-family: "IM Fell English SC", serif;
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 1fr 432px;
+  gap: 23px;
+  margin-bottom: 90px;
+}
+.card .card-photo {
+  max-width: 889px;
+}
+.card .card-description:hover {
+  box-shadow: 0px 18px 34px rgba(5, 14, 43, 0.363);
+}
+.card .card-description {
+  padding: 36px;
+  padding-top: 0px;
+  box-shadow: 0px 18px 34px rgba(5, 16, 55, 0.15);
+  border-radius: 12px;
+}
+.card .card-description h2 {
+  font-size: 38px;
+  line-height: 36px;
+}
+.card .card-description .card--description-avatar {
+  margin-bottom: 16px;
+}
+.card .card-description .card--description-avatar span {
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 8px;
+}
+.card .card-description .card-description-offer {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+.card .card-description .card-description-offer .price .price-1,
+.card .card-description .card-description-offer .time .price-1 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.card .card-description .card-description-offer .price .price-2,
+.card .card-description .card-description-offer .time .price-2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+.card .card-description .card-description-offer .price .price-3,
+.card .card-description .card-description-offer .time .price-3 {
+  font-size: 16px;
+  line-height: 18px;
+  color: #8e8e93;
+}
+.card .card-description .card-description-btn {
+  cursor: pointer;
+  font-family: "IM Fell English SC", serif;
+  background: #007aff;
+  border-radius: 45px;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  width: 360px;
+  height: 56px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.card .card-description .card-description-btn:hover {
+  background: #324de6ec;
+  color: #f5f5f5;
+}
+.card .card-description p {
+  text-align: center;
+}
+.card .card-description p a {
+  font-family: "IM Fell English SC", serif;
+  color: #007aff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+.card .card-description p a:hover {
+  color: #324de6ec;
+}
+.cards {
+  margin-bottom: 90px;
+}
+.cards .cards-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "IM Fell English SC", serif;
+}
+.cards .cards-title h5 {
+  font-family: "IM Fell English SC", serif;
+  font-size: 28px;
+  line-height: 0px;
+}
+.cards .cards-title span {
+  font-size: 20px;
+  color: #8e8e93;
+}
+.cards .cards-block {
+  font-family: "IM Fell English SC", serif;
+  display: flex;
+  gap: 32px;
+}
+.cards .cards-block .card-item {
+  position: relative;
+  width: 312px;
+  border: 1.5px solid #e6e6e6;
+  border-radius: 16px;
+}
+.cards .cards-block .card-item .card-item-img {
+  margin-bottom: 16px;
+}
+.cards .cards-block .card-item span {
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 48px;
+}
+.cards .cards-block .card-item .card-item-info {
+  text-align: right;
+  padding: 20px;
+  padding-top: 0;
+}
+.cards .cards-block .card-item .card-item-info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #8e8e93;
+}
+.cards .cards-block .card-item .card-item-info .card-item-profile {
+  font-size: 16px;
+  line-height: 24px;
+  color: #8e8e93;
+}
+.cards .cards-block .card-item .card-item-info .card-item-profile-price {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.cards .cards-block .card-item .card-item-time {
+  width: 105px;
+  height: 36px;
+  position: absolute;
+  padding: 10px;
+  right: 10px;
+  top: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 10px 30px rgba(5, 16, 55, 0.15);
+  border-radius: 30px;
+}
+.cards .cards-block .card-item .card-item-time span {
+  font-size: 16px;
+  text-align: center;
+  padding-left: 10px;
+  margin-left: 0px;
+}
+.features .cards-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "IM Fell English SC", serif;
+}
+.features .cards-title h5 {
+  font-family: "IM Fell English SC", serif;
+  font-size: 28px;
+  line-height: 0px;
+}
+.features .cards-title span {
+  font-size: 20px;
+  color: #8e8e93;
+}
+.features .cards-block {
+  font-family: "IM Fell English SC", serif;
+  display: flex;
+  gap: 32px;
+}
+.features .cards-block .card-item {
+  position: relative;
+  width: 312px;
+  border: 1.5px solid #e6e6e6;
+  border-radius: 16px;
+}
+.features .cards-block .card-item .card-item-img {
+  margin-bottom: 16px;
+}
+.features .cards-block .card-item span {
+  margin-left: 10px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 48px;
+}
+.features .cards-block .card-item .card-item-info {
+  text-align: right;
+  padding: 20px;
+  padding-top: 0;
+}
+.features .cards-block .card-item .card-item-info p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #8e8e93;
+}
+.features .cards-block .card-item .card-item-info .card-item-profile {
+  font-size: 16px;
+  line-height: 24px;
+  color: #8e8e93;
+}
+.features .cards-block .card-item .card-item-info .card-item-profile-price {
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.features .cards-block .card-item .card-item-time {
+  width: 105px;
+  height: 36px;
+  position: absolute;
+  padding: 10px;
+  right: 10px;
+  top: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 10px 30px rgba(5, 16, 55, 0.15);
+  border-radius: 30px;
+}
+.features .cards-block .card-item .card-item-time span {
+  font-size: 16px;
+  text-align: center;
+  padding-left: 10px;
+  margin-left: 0px;
+}
+.load-more {
+  margin: 40px 570px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 208px;
+  height: 56px;
+  border: 1px solid #aeaeb2;
+  border-radius: 48px;
+  background-color: #fff;
+}
+footer {
+  padding-top: 40px;
+  padding-left: 48px;
+  font-family: "IM Fell English SC", serif;
+  background-color: #000;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 300px;
+}
+footer .footer .footer-subscribe p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+footer .footer .footer-subscribe .footer-subscribe-input {
+  position: relative;
+}
+footer .footer .footer-subscribe .footer-subscribe-input input {
+  background: #2c2c2e;
+  border-radius: 72px;
+  width: 427px;
+  height: 56px;
+  border: none;
+  padding-left: 20px;
+  color: #fff;
+}
+footer .footer .footer-subscribe .footer-subscribe-input button {
+  cursor: pointer;
+  position: absolute;
+  width: 98px;
+  height: 56px;
+  color: #fff;
+  right: 0;
+  border-radius: 72px;
+  background-color: #0a84ff;
+  border: none;
+}
+footer .footer .footer-subscribe .footer-subscribe-input button:hover {
+  background-color: #324de6ec;
+}
+footer .footer .footer-menu {
+  display: flex;
+  color: rgba(235, 235, 245, 0.6);
+}
+footer .footer .footer-menu ul li {
+  cursor: pointer;
+  list-style-type: none;
+  font-family: "IM Fell English SC", serif;
+}
+footer .footer .footer-menu ul li:hover {
+  color: #fff;
+}
+footer .footer img {
+  margin-bottom: 34px;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 40px 40px;
+}
