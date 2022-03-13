@@ -11,7 +11,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /\.scss|css$/,
         use: [miniCss.loader, "css-loader", "sass-loader"],
       },
       {
@@ -24,6 +24,10 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },

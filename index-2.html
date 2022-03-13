@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <img src="./static/nerds-logo.png" alt="logo" />
+        </div>
+        <ul class="headerMenu">
+          <li><a class="headerLinkItem" href="#">Студия</a></li>
+          <li><a class="headerLinkItem" href="#">Клиенты</a></li>
+          <li><a class="headerLinkItem" href="#">Магазин</a></li>
+          <li><a class="headerLinkItem" href="#">Контакты</a></li>
+        </ul>
+        <div class="headerCart">
+          <img src="./static/cart-icon.png" alt="cart" />
+          <a href="#" class="headerLinkItem"> Корзина </a>
+        </div>
+      </header>
+      <section class="title">
+        <span class="headerTitle">Магазин готовых шаблонов</span>
+      </section>
+    </div>
+    <main>
+      <div class="menu">
+        <h2>СТОИМОСТЬ:</h2>
+        <div class="menuRange">
+          <input type="range" id="volume" name="volume" min="0" max="15000" />
+          <label for="volume"></label>
+          <div class="cost">
+            <label for="costStart">ОТ</label>
+            <input type="text" id="costStart" value="0" />
+            <label for="costEnd">ДО</label>
+            <input type="text" id="costStart" value="15 000" />
+          </div>
+        </div>
+        <div class="menuFilter">
+          <p>Сетка:</p>
+          <div class="formSetka">
+            <div class="formSetkaItem">
+              <input id="radio-1" type="radio" name="radio" value="1" checked />
+              <label for="radio-1">Адаптивная</label>
+            </div>
+            <div class="formSetkaItem">
+              <input id="radio-2" type="radio" name="radio" value="2" />
+              <label for="radio-2">Фикированная</label>
+            </div>
+            <div class="formSetkaItem">
+              <input id="radio-3" type="radio" name="radio" value="3" />
+              <label for="radio-3">Резиновая</label>
+            </div>
+          </div>
+        </div>
+        <div class="menuAwesome">
+          <p>особенности:</p>
+          <div class="formSetka2">
+            <div class="formSetkaItem">
+              <input
+                id="radio2-1"
+                type="radio"
+                name="radio2"
+                value="7"
+                checked
+              />
+              <label for="radio2-1"
+                >Слайдер
+                <div class="labelImg"></div>
+              </label>
+            </div>
+            <div class="formSetkaItem">
+              <input id="radio2-2" type="radio" name="radio2" value="8" />
+              <label for="radio2-2">Блок преимуществ</label>
+            </div>
+            <div class="formSetkaItem">
+              <input id="radio2-3" type="radio" name="radio2" value="9" />
+              <label for="radio2-3">Новости</label>
+            </div>
+            <div class="formSetkaItem">
+              <input id="radio2-4" type="radio" name="radio2" value="10" />
+              <label for="radio2-4">Галерея</label>
+            </div>
+            <div class="formSetkaItem">
+              <input id="radio2-5" type="radio" name="radio2" value="11" />
+              <label for="radio2-5">Корзина</label>
+            </div>
+          </div>
+        </div>
+        <button>ПОКАЗАТЬ</button>
+      </div>
+      <div class="items">
+        <div class="itemsTitle">
+          <h2>СОРТИРОВАТЬ:</h2>
+          <ul class="itemsTitleFilter">
+            <li>По цене</li>
+            <li>По типу</li>
+            <li>По названию</li>
+            <li>
+              <img src="./static/icon-down-dir.png" alt="" />
+              <img src="./static/icon-up-dir.png" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="itemsJobs">
+          <div class="itemsJobsItem">
+            <div class="itemsJobsItemHead">
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+            </div>
+            <img src="./static/img-sedona.png" alt="" />
+            <div class="itemsJobsItemOffer">
+              <p>Sedona</p>
+              <span>Информационный сайт для туристов</span>
+              <button>9 900 РУБ.</button>
+            </div>
+          </div>
+          <div class="itemsJobsItem">
+            <div class="itemsJobsItemHead">
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+            </div>
+            <img src="./static/img-pink.png" alt="" />
+            <div class="itemsJobsItemOffer">
+              <p>Pink App</p>
+              <span>Продуктовый лендинг приложения для iOS и Android</span>
+              <button>9 900 РУБ.</button>
+            </div>
+          </div>
+          <div class="itemsJobsItem">
+            <div class="itemsJobsItemHead">
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+            </div>
+            <img src="./static/img-barbershop.png" alt="" />
+            <div class="itemsJobsItemOffer">
+              <p>Sedona</p>
+              <span>Сайт салона красоты. Для мужчин, да.</span>
+              <button>9 900 РУБ.</button>
+            </div>
+          </div>
+          <div class="itemsJobsItem">
+            <div class="itemsJobsItemHead">
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+            </div>
+            <img src="./static/img-mishka.png" alt="" />
+            <div class="itemsJobsItemOffer">
+              <p>Sedona</p>
+              <span>Интернет-магазин вязаных игрушек</span>
+              <button>9 900 РУБ.</button>
+            </div>
+          </div>
+          <div class="itemsJobsItem">
+            <div class="itemsJobsItemHead">
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+            </div>
+            <img src="./static/img-aplus.png" alt="" />
+            <div class="itemsJobsItemOffer">
+              <p>Sedona</p>
+              <span>Лендинг курсов повышения квалификации</span>
+              <button>9 900 РУБ.</button>
+            </div>
+          </div>
+          <div class="itemsJobsItem">
+            <div class="itemsJobsItemHead">
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+              <div class="sircle"></div>
+            </div>
+            <img src="./static/img-kvast.png" alt="" />
+            <div class="itemsJobsItemOffer">
+              <p>Sedona</p>
+              <span>Промо-сайт производителя крафтового кваса</span>
+              <button>9 900 РУБ.</button>
+            </div>
+          </div>
+          <div class="pagination">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>СЛЕДУЮЩАЯ</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- //FOOTER -->
+    <section class="contacts">
+      <!-- <img src="./static/contacts.png" alt="contacts" /> -->
+	  <iframe
+	  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037861610228!2d30.32085871744385!3d59.93871650000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0x565f69d36dad627c!2sDESIGN%20STUDIO!5e0!3m2!1sru!2sru!4v1647158499855!5m2!1sru!2sru"
+	  width="1440"
+	  height="417"
+	  style="border: 0"
+	  allowfullscreen=""
+	  loading="lazy"
+	></iframe>
+    </section>
+    <footer>
+      <div class="footerSocial">
+        <div class="footerSocialItem">
+          <img src="./static/vk-icon.png" alt="vk" />
+        </div>
+        <div class="footerSocialItem">
+          <img src="./static/fb-icon.png" alt="fb" />
+        </div>
+        <div class="footerSocialItem">
+          <img src="./static/insta-icon.png" alt="icon" />
+        </div>
+      </div>
+      <div class="footerOffer">
+        <h4>Давайте дружить, это выгодно!</h4>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+  </body>
+</html>
